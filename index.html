@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Quiz about Quiz Shows</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+
+<!-- Title -->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-sm" id=title>
+            <h1>Quiz about Quiz Shows</h1>
+        </div>
+    </div>
+</div>
+
+<!--intro content-->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">My Quiz About Quiz Shows</h3>
+  <img src="Quiztime.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Quiz time Graphic " width="250" height="250">
+  <h3>Click below to start</h3>
+  <input type="button" value="Start Quiz"class="btn btn-success text-center" onclick="startQuiz()"/>
+</div>
+
+ <!--question 1-->
+ <div id="question1" class="container-fluid bg-1 text-center">
+    <div class="row justify-content-center" >
+        <h3 class="text-center">Who was the original host of ‘Catchphrase’</h3>
+    </div>
+    <img src="catchphrase.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo for gameshow Catchphrase" width="250" height="250">
+    <div class="row justify-content-center">
+      <input type="radio" name="quest1" id="a1" value=1 />
+      <label for="a1" class="text-center">a) Roy Orbison</label>
+      <input type="radio" name="quest1" id="a2" value=1 />
+      <label for="a2">b) Roy Keane</label>
+      <input type="radio" name="quest1" id="a3" value=3  />
+      <label for="a3">c) Roy Walker</label>
+    </div>
+    <div class="row" class="justify-content-center">
+      <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question2()"/>
+    </div>
+  </div>
+
+   <!--question 2-->
+ <div id="question2" class="container-fluid bg-1 text-center">
+    <div class="row justify-content-center" >
+        <h3 class="text-center">Which of the quiz stars of ‘The Chase’ is often referred to by Bradley Walsh as ‘Frosty Knickers’</h3>
+    </div>
+    <img src="chase.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo for the gameshow The Chase" width="250" height="250">
+    <div class="row justify-content-center">
+      <input type="radio" name="quest2" id="b1" value=1 />
+      <label for="a1" class="text-center">a) Anne Hegerty</label>
+      <input type="radio" name="quest2" id="b2" value=1 />
+      <label for="a2">b) Jenny Ryan</label>
+      <input type="radio" name="quest2" id="b3" value=3  />
+      <label for="a3">c) Mark Labbett</label>
+    </div>
+    <div class="row" class="justify-content-center">
+      <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question3()"/>
+    </div>
+  </div>
+
+     <!--question 3-->
+ <div id="question3" class="container-fluid bg-1 text-center">
+    <div class="row justify-content-center" >
+        <h3 class="text-center">In which year was ‘Deal or No Deal’ first broadcast?</h3>
+    </div>
+    <img src="deal.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo for the gameshow Deal or No Deal " width="250" height="250">
+    <div class="row justify-content-center">
+      <input type="radio" name="quest3" id="c1" value=1 />
+      <label for="a1" class="text-center">a) 2003 </label>
+      <input type="radio" name="quest3" id="c2" value=1 />
+      <label for="a2">b) 2004 </label>
+      <input type="radio" name="quest3" id="c3" value=3  />
+      <label for="a3">c) 2005 </label>
+    </div>
+    <div class="row" class="justify-content-center">
+      <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question4()"/>
+    </div>
+  </div>
+
+     <!--question 4-->
+     <div id="question4" class="container-fluid bg-1 text-center">
+        <div class="row justify-content-center" >
+            <h3 class="text-center">Who first took over as full-time presenter of ‘Countdown’ after the death of Richard Whiteley?</h3>
+        </div>
+        <img src="countdown.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo for the gameshow Countdown" width="250" height="250">
+        <div class="row justify-content-center">
+          <input type="radio" name="quest4" id="d1" value=1 />
+          <label for="a1" class="text-center">a) Nick James </label>
+          <input type="radio" name="quest4" id="d2" value=1 />
+          <label for="a2">b) Des Lynamm </label>
+          <input type="radio" name="quest4" id="d3" value=3  />
+          <label for="a3">c) Nick Hewer </label>
+        </div>
+        <div class="row" class="justify-content-center">
+          <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question5()"/>
+        </div>
+      </div>
+
+           <!--question 5-->
+     <div id="question5" class="container-fluid bg-1 text-center">
+        <div class="row justify-content-center" >
+            <h3 class="text-center">Can you name the two long-time team captains on ‘Have I Got New for You’</h3>
+        </div>
+        <img src="news.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo for the gameshow Have I got news for you" width="250" height="250">
+        <div class="row justify-content-center">
+          <input type="radio" name="quest5" id="e1" value=1 />
+          <label for="a1" class="text-center">a) Ian Hislop and Paul Merton </label>
+          <input type="radio" name="quest5" id="e2" value=1 />
+          <label for="a2">b) Ian Rush and Paul Merson</label>
+          <input type="radio" name="quest5" id="e3" value=3  />
+          <label for="a3">c) Ian McKellen and Paul Newman </label>
+        </div>
+        <div class="row" class="justify-content-center">
+            <input type="button" value="Results"class="btn btn-success mx-auto" onclick="results()"/>
+        </div>
+      </div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Made By David Hancock</a></p> 
+</footer>
+
+</body>
+</html>
