@@ -15,24 +15,33 @@ function startQuiz() {
     document.getElementById('question1').style.display = 'block'
 }
 
-function question1() {
+function question(formElement){
     let result1 = document.forms["Q1"]["quest1"].value;
-    if (result1 == ""){
-        alert("Please fill in radio button")
-    }
-    else if (result1 == 1) {
-        document.getElementById('question1').style.display = 'none'
-        document.getElementById('results').style.display = 'block'
-    }
-    else {
-        document.getElementById('question1').style.display = 'none'
-        document.getElementById('results').style.display = 'block'
-        count = count +1
-        document.getElementById('score').innerHTML = `${count} out of 5`
-    }
+    // validateNotBlank(id2);
+    // validateNotBlank(id1);
+    // validateNumber(id1);
+    console.log(formElement)
+
 }
 
-function question3() {
+// function question() {
+//     let result1 = document.forms["Q1"]["quest1"].value;
+//     if (result1 == ""){
+//         alert("Please fill in radio button")
+//     }
+//     else if (result1 == 1) {
+//         document.getElementById('question1').style.display = 'none'
+//         document.getElementById('question2').style.display = 'block'
+//     }
+//     else {
+//         document.getElementById('question1').style.display = 'none'
+//         document.getElementById('question2').style.display = 'block'
+//         count = count +1
+//         document.getElementById('score').innerHTML = `${count} out of 5`
+//     }
+// }
+
+function question2() {
     let result2 = document.forms["Q2"]["quest2"].value;
     if (result2 == ""){
         alert("fill in radio button")
@@ -65,3 +74,4 @@ function results() {
     document.getElementById('question5').style.display = 'none'
     document.getElementById('results').style.display = 'block'
 }
+
