@@ -1,9 +1,13 @@
+let count = 0
+
 window.onload = function() {
     document.getElementById('question1').style.display = 'none'
     document.getElementById('question2').style.display = 'none'
     document.getElementById('question3').style.display = 'none'
     document.getElementById('question4').style.display = 'none'
     document.getElementById('question5').style.display = 'none'
+    document.getElementById('results').style.display = 'none'
+    // count = 0;
 }
 
 function startQuiz() {
@@ -11,21 +15,20 @@ function startQuiz() {
     document.getElementById('question1').style.display = 'block'
 }
 
-function question2() {
+function question1() {
     let result1 = document.forms["Q1"]["quest1"].value;
     if (result1 == ""){
-        alert("fill in radio button")
-        return false;
+        alert("Please fill in radio button")
     }
-    else if (result1 = 1) {
+    else if (result1 == 1) {
         document.getElementById('question1').style.display = 'none'
-        document.getElementById('question2').style.display = 'block'
-        return true;
+        document.getElementById('results').style.display = 'block'
     }
     else {
         document.getElementById('question1').style.display = 'none'
-        document.getElementById('question2').style.display = 'block'
-        return true;    
+        document.getElementById('results').style.display = 'block'
+        count = count +1
+        document.getElementById('score').innerHTML = `${count} out of 5`
     }
 }
 
@@ -43,6 +46,7 @@ function question3() {
     else {
         document.getElementById('question2').style.display = 'none'
         document.getElementById('question3').style.display = 'block'
+        score ++
         return true;    
     }
 }
@@ -55,4 +59,9 @@ function question4() {
 function question5() {
     document.getElementById('question4').style.display = 'none'
     document.getElementById('question5').style.display = 'block'
+}
+
+function results() {
+    document.getElementById('question5').style.display = 'none'
+    document.getElementById('results').style.display = 'block'
 }
