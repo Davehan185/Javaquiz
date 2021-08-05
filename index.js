@@ -7,71 +7,29 @@ window.onload = function() {
     document.getElementById('question4').style.display = 'none'
     document.getElementById('question5').style.display = 'none'
     document.getElementById('results').style.display = 'none'
-    // count = 0;
 }
+
+
 
 function startQuiz() {
     document.getElementById('main').style.display = 'none'
     document.getElementById('question1').style.display = 'block'
 }
 
-function question(formElement){
-    let result1 = document.forms["Q1"]["quest1"].value;
-    // validateNotBlank(id2);
-    // validateNotBlank(id1);
-    // validateNumber(id1);
-    console.log(formElement)
-
-}
-
-// function question() {
-//     let result1 = document.forms["Q1"]["quest1"].value;
-//     if (result1 == ""){
-//         alert("Please fill in radio button")
-//     }
-//     else if (result1 == 1) {
-//         document.getElementById('question1').style.display = 'none'
-//         document.getElementById('question2').style.display = 'block'
-//     }
-//     else {
-//         document.getElementById('question1').style.display = 'none'
-//         document.getElementById('question2').style.display = 'block'
-//         count = count +1
-//         document.getElementById('score').innerHTML = `${count} out of 5`
-//     }
-// }
-
-function question2() {
-    let result2 = document.forms["Q2"]["quest2"].value;
-    if (result2 == ""){
+function question(w,x,y,z){
+    document.getElementById[w]
+    let v = document.forms[w][x].value;
+            
+    if (v == ""){
         alert("fill in radio button")
-        return false;
-    }
-    else if (result2 = 1) {
-        document.getElementById('question2').style.display = 'none'
-        document.getElementById('question3').style.display = 'block'
-        return true;
-    }
+    }  
+
     else {
-        document.getElementById('question2').style.display = 'none'
-        document.getElementById('question3').style.display = 'block'
-        score ++
-        return true;    
+        document.getElementById(y).style.display = 'none'
+        document.getElementById(z).style.display = 'block'
+        count = count + parseInt(v)
+        document.getElementById('score').innerHTML = `${count} out of 5`
     }
-}
-
-function question4() {
-    document.getElementById('question3').style.display = 'none'
-    document.getElementById('question4').style.display = 'block'
-}
-
-function question5() {
-    document.getElementById('question4').style.display = 'none'
-    document.getElementById('question5').style.display = 'block'
-}
-
-function results() {
-    document.getElementById('question5').style.display = 'none'
-    document.getElementById('results').style.display = 'block'
+ 
 }
 
